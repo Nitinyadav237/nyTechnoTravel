@@ -9,7 +9,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/api': {
+      '/api/v1': {
         target: 'https://ny-techno-travel.vercel.app',
         changeOrigin: true,
         secure: false,
