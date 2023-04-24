@@ -15,7 +15,6 @@ const port = process.env.PORT || 8000;
 
 const corsOptions = {
   origin: "https://ny-techno-travels.vercel.app",
-  credentials: true,
 };
 
 //database Connection
