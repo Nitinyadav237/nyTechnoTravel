@@ -1,16 +1,15 @@
 {
   "functions": {
-    "api/v1/tours/search/getFeaturedTours": {
-      "memory": 512,
-      "maxDuration": 20
+    "api/tours/getTourCount": {
+      "maxDuration": 10
     },
-    "api/v1/tours": {
+    "api/tours/getTours": {
       "memory": 512,
-      "maxDuration": 20
+      "maxDuration": 10
     },
-    "api/v1/tours/search/getTourCount": {
+    "api/tours/search/getFeaturedTours": {
       "memory": 512,
-      "maxDuration": 20
+      "maxDuration": 10
     }
   },
   "routes": [
@@ -24,7 +23,7 @@
     },
     {
       "src": "/api/v1/tours/search/getFeaturedTours",
-      "dest": "api/v1/tours/search/getFeaturedTours"
+      "dest": "api/tours/search/getFeaturedTours"
     },
     {
       "src": "/(.*)",
