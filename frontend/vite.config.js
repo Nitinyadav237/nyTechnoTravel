@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     cors: true,
     proxy: {
-      '/api/v1/auth/*': {
+      '/api/v1/auth/login': {
         target: 'https://ny-techno-travel-gz7u.onrender.com',
         changeOrigin: true,
         headers: {
