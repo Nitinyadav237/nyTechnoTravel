@@ -1,13 +1,13 @@
 {
   "functions": {
-    "api/tours/getTourCount": {
+    "api/v1/tours/getTourCount": {
       "maxDuration": 10
     },
-    "api/tours/getTours": {
+    "api/v1/tours/getTours": {
       "memory": 512,
       "maxDuration": 10
     },
-    "api/tours/search/getFeaturedTours": {
+    "api/v1/tours/search/getFeaturedTours": {
       "memory": 512,
       "maxDuration": 10
     }
