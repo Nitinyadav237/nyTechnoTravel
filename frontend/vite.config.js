@@ -11,10 +11,10 @@ export default defineConfig({
         changeOrigin: true,
         headers: {
           'Access-Control-Allow-Origin': 'https://ny-techno-travel.vercel.app/',
-          'Access-Control-Allow-Methods': 'POST, OPTIONS',
+          'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS',
           'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization,origin,accept',
           'Access-Control-Allow-Credentials': 'true',
-         "withCredentials" :true
+         "withCredentials" :"false"
         }
       },
       '/api/v1/tours/*': {
@@ -35,10 +35,10 @@ export default defineConfig({
           'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS',
           'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization,origin,accept',
           'Access-Control-Allow-Credentials': 'true',
-          "withCredentials" :true
+          "withCredentials" :"false"
         }
       },
-      '/api/v1/users/*': {
+      '/api/v1/users/*': 
         target: 'https://ny-techno-travel-gz7u.onrender.com/',
         changeOrigin: true,
         headers: {
@@ -46,7 +46,7 @@ export default defineConfig({
           'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS',
           'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization,origin,accept',
           'Access-Control-Allow-Credentials': 'true',
-          "withCredentials" :true
+          "withCredentials" :"false"
         }
       },
       '/api/v1/bookings/*': {
@@ -57,7 +57,7 @@ export default defineConfig({
           'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS',
           'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization,origin,accept',
           'Access-Control-Allow-Credentials': 'true',
-          "withCredentials" :true
+          "withCredentials" :"false"
         }
       }
     }
