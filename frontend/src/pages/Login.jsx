@@ -31,6 +31,7 @@ const Login = () => {
         method: "post",
         headers: {
           "content-type": "application/json",
+          'Access-Control-Allow-Credentials': 'true'
         },
         credentials: "include",
         body: JSON.stringify(credentials),
