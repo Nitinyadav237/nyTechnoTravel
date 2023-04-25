@@ -13,8 +13,7 @@ export default defineConfig({
           'Access-Control-Allow-Origin': 'https://ny-techno-travel.vercel.app/',
           'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS',
           'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization,origin,accept',
-          'Access-Control-Allow-Credentials': 'true',
-          "Accept-Post":"Text/Plain"
+          'Access-Control-Allow-Credentials': true,
         }
       },
       '/api/v1/tours/*': {
@@ -24,7 +23,7 @@ export default defineConfig({
           'Access-Control-Allow-Origin': 'https://ny-techno-travel.vercel.app/',
           'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS',
           'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization,origin,accept',
-          'Access-Control-Allow-Credentials': 'true'
+          'Access-Control-Allow-Credentials': true
         }
       },
       '/api/v1/reviews/*': {
@@ -34,7 +33,7 @@ export default defineConfig({
           'Access-Control-Allow-Origin': 'https://ny-techno-travel.vercel.app/',
           'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS',
           'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization,origin,accept',
-          'Access-Control-Allow-Credentials': 'true',
+          'Access-Control-Allow-Credentials': true
         }
       },
       '/api/v1/users/*': {
@@ -44,7 +43,7 @@ export default defineConfig({
           'Access-Control-Allow-Origin': 'https://ny-techno-travel.vercel.app/',
           'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS',
           'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization,origin,accept',
-          'Access-Control-Allow-Credentials': 'true',
+          'Access-Control-Allow-Credentials': true
         }
       }
       },
@@ -55,7 +54,7 @@ export default defineConfig({
           'Access-Control-Allow-Origin': 'https://ny-techno-travel.vercel.app/',
           'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS',
           'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization,origin,accept',
-          'Access-Control-Allow-Credentials': 'true',
+          'Access-Control-Allow-Credentials': true
         }
       }
     }
