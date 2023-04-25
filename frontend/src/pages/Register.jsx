@@ -31,7 +31,7 @@ const Register = () => {
         method: "post",
         headers: {
           "content-type": "application/json",
-          'Access-Control-Allow-Credentials': 'true'
+          
         },
         body: JSON.stringify(credentials),
       });
