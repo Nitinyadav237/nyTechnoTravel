@@ -15,7 +15,7 @@ export default defineConfig({
           'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization,origin,accept',
           'Access-Control-Allow-Credentials': 'true',
         },
-         withCredentials: true,
+         withCredentials: false,
       },
       '/api/v1/tours/*': {
         target: 'https://ny-techno-travel-gz7u.onrender.com/',
@@ -26,7 +26,7 @@ export default defineConfig({
           'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization,origin,accept',
           'Access-Control-Allow-Credentials': 'true'
         },
-        withCredentials: true,
+        withCredentials: false,
       },
       '/api/v1/reviews/*': {
         target: 'https://ny-techno-travel-gz7u.onrender.com/',
@@ -37,7 +37,7 @@ export default defineConfig({
           'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization,origin,accept',
           'Access-Control-Allow-Credentials': 'true',
         },
-         withCredentials: true,
+         withCredentials: false,
       },
       '/api/v1/users/*': {
         target: 'https://ny-techno-travel-gz7u.onrender.com/',
@@ -48,7 +48,7 @@ export default defineConfig({
           'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization,origin,accept',
           'Access-Control-Allow-Credentials': 'true',
         },
-         withCredentials: true,
+         withCredentials: false,
       }
       },
       '/api/v1/bookings/*': {
@@ -60,7 +60,7 @@ export default defineConfig({
           'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization,origin,accept',
           'Access-Control-Allow-Credentials': 'true',
         },
-         withCredentials: true,
+         withCredentials: false,
       }
     }
   }
