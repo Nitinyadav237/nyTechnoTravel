@@ -1,13 +1,31 @@
 {
-  "version": 2,
   "functions": {
-    "api/*": {
+    "api/v1/tours/search/getFeaturedTours": {
       "memory": 512,
-      "timeout": 60,
-      "runtime": "@vercel/node"
+      "maxDuration": 20
+    },
+    "api/v1/tours": {
+      "memory": 512,
+      "maxDuration": 20
+    },
+    "api/v1/tours/search/getTourCount": {
+      "memory": 512,
+      "maxDuration": 20
     }
   },
   "routes": [
+    {
+      "src": "/api/v1/tours/search/getTourCount",
+      "dest": "api/v1/tours/search/getTourCount"
+    },
+    {
+      "src": "/api/v1/tours",
+      "dest": "api/v1/tours"
+    },
+    {
+      "src": "/api/v1/tours/search/getFeaturedTours",
+      "dest": "api/v1/tours/search/getFeaturedTours"
+    },
     {
       "src": "/(.*)",
       "dest": "/"
