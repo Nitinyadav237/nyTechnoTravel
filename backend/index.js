@@ -15,6 +15,7 @@ const port = process.env.PORT || 8000;
 
 const corsOptions = {
   origin: "https://ny-techno-travel.vercel.app",
+credentials:true
 };
 
 
