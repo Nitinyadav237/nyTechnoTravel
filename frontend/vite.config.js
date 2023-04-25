@@ -12,7 +12,7 @@ export default defineConfig({
         headers: {
           'Access-Control-Allow-Origin': 'https://ny-techno-travel.vercel.app/',
           'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS',
-          'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization',
+          'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization,origin,accept',
           'Access-Control-Allow-Credentials': 'true',
          "withCredentials" :true
         }
@@ -23,7 +23,7 @@ export default defineConfig({
         headers: {
           'Access-Control-Allow-Origin': 'https://ny-techno-travel.vercel.app/',
           'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS',
-          'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization',
+          'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization,origin,accept',
           'Access-Control-Allow-Credentials': 'true'
         }
       },
@@ -33,7 +33,7 @@ export default defineConfig({
         headers: {
           'Access-Control-Allow-Origin': 'https://ny-techno-travel.vercel.app/',
           'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS',
-          'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization',
+          'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization,origin,accept',
           'Access-Control-Allow-Credentials': 'true',
           "withCredentials" :true
         }
@@ -44,7 +44,7 @@ export default defineConfig({
         headers: {
           'Access-Control-Allow-Origin': 'https://ny-techno-travel.vercel.app/',
           'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS',
-          'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization',
+          'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization,origin,accept',
           'Access-Control-Allow-Credentials': 'true',
           "withCredentials" :true
         }
@@ -55,7 +55,7 @@ export default defineConfig({
         headers: {
           'Access-Control-Allow-Origin': 'https://ny-techno-travel.vercel.app/',
           'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS',
-          'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization',
+          'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization,origin,accept',
           'Access-Control-Allow-Credentials': 'true',
           "withCredentials" :true
         }
