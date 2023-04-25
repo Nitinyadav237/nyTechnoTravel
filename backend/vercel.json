@@ -11,5 +11,11 @@
       "src": "/(.*)",
       "dest": "/"
     }
-  ]
+  ],
+  "functions": {
+    "api/v1/*": {
+      "memory": 512,
+      "timeout": 60
+    }
+  }
 }
