@@ -11,7 +11,7 @@ export default defineConfig({
         target: 'https://ny-techno-travel-gz7u.onrender.com',
         changeOrigin: true,
         headers: {
-          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Origin': 'https://ny-techno-travel.vercel.app/',
           'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS',
           'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization',
           'Access-Control-Allow-Credentials': 'true'
@@ -21,7 +21,7 @@ export default defineConfig({
         target: 'https://ny-techno-travel-gz7u.onrender.com',
         changeOrigin: true,
         headers: {
-          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Origin': 'https://ny-techno-travel.vercel.app/',
           'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS',
           'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization',
           'Access-Control-Allow-Credentials': 'true'
@@ -31,7 +31,8 @@ export default defineConfig({
         target: 'https://ny-techno-travel-gz7u.onrender.com',
         changeOrigin: true,
         headers: {
-          'Access-Control-Allow-Origin': '*',
+        target: 'https://ny-techno-travel-gz7u.onrender.com',
+        'Access-Control-Allow-Origin': 'https://ny-techno-travel.vercel.app/',
           'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS',
           'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization',
           'Access-Control-Allow-Credentials': 'true'
@@ -41,7 +42,8 @@ export default defineConfig({
         target: 'https://ny-techno-travel-gz7u.onrender.com',
         changeOrigin: true,
         headers: {
-          'Access-Control-Allow-Origin': '*',
+        target: 'https://ny-techno-travel-gz7u.onrender.com',
+        'Access-Control-Allow-Origin': 'https://ny-techno-travel.vercel.app/',
           'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS',
           'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization',
           'Access-Control-Allow-Credentials': 'true'
