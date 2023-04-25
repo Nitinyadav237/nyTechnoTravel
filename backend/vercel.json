@@ -2,15 +2,15 @@
   "functions": {
     "api/v1/tours/search/getFeaturedTours": {
       "memory": 512,
-      "maxDuration": 20
+      "maxDuration": 10
     },
     "api/v1/tours": {
       "memory": 512,
-      "maxDuration": 20
+      "maxDuration": 10
     },
     "api/v1/tours/search/getTourCount": {
       "memory": 512,
-      "maxDuration": 20
+      "maxDuration": 10
     }
   },
   "routes": [
