@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     cors: true,
     proxy: {
-      '/api/v1/auth/login': {
+      '/api/v1/auth/*': {
         target: 'https://ny-techno-travel-gz7u.onrender.com',
         changeOrigin: true,
         headers: {
@@ -14,7 +14,7 @@ export default defineConfig({
           'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS',
           'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization,origin,accept',
           'Access-Control-Allow-Credentials': 'true',
-         "withCredentials" :"false"
+          "Accept-Post":"Text/Plain"
         }
       },
       '/api/v1/tours/*': {
@@ -35,7 +35,6 @@ export default defineConfig({
           'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS',
           'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization,origin,accept',
           'Access-Control-Allow-Credentials': 'true',
-          "withCredentials" :"false"
         }
       },
       '/api/v1/users/*': {
@@ -46,7 +45,6 @@ export default defineConfig({
           'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS',
           'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization,origin,accept',
           'Access-Control-Allow-Credentials': 'true',
-          "withCredentials": "false"
         }
       }
       },
@@ -58,7 +56,6 @@ export default defineConfig({
           'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS',
           'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization,origin,accept',
           'Access-Control-Allow-Credentials': 'true',
-          "withCredentials" :"false"
         }
       }
     }
