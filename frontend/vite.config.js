@@ -16,16 +16,6 @@ export default defineConfig({
           'Access-Control-Allow-Credentials': 'true'
         }
       },
-      // '/api/v1/auth/login': {
-      //   target: 'https://ny-techno-travel-gz7u.onrender.com/',
-      //   changeOrigin: true,
-      //   headers: {
-      //     'Access-Control-Allow-Origin': 'https://ny-techno-travel.vercel.app/',
-      //     'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS',
-      //     'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization',
-      //     'Access-Control-Allow-Credentials': 'true'
-      //   }
-      // },
       '/api/v1/tours/*': {
         target: 'https://ny-techno-travel-gz7u.onrender.com/',
         changeOrigin: true,
@@ -37,6 +27,26 @@ export default defineConfig({
         }
       },
       '/api/v1/reviews/*': {
+        target: 'https://ny-techno-travel-gz7u.onrender.com/',
+        changeOrigin: true,
+        headers: {
+          'Access-Control-Allow-Origin': 'https://ny-techno-travel.vercel.app/',
+          'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS',
+          'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization',
+          'Access-Control-Allow-Credentials': 'true'
+        }
+      },
+      '/api/v1/users/*': {
+        target: 'https://ny-techno-travel-gz7u.onrender.com/',
+        changeOrigin: true,
+        headers: {
+          'Access-Control-Allow-Origin': 'https://ny-techno-travel.vercel.app/',
+          'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS',
+          'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization',
+          'Access-Control-Allow-Credentials': 'true'
+        }
+      },
+      '/api/v1/booking/*': {
         target: 'https://ny-techno-travel-gz7u.onrender.com/',
         changeOrigin: true,
         headers: {
