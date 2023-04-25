@@ -14,8 +14,9 @@ const app = express();
 const port = process.env.PORT || 8000;
 
 const corsOptions = {
-  origin: "https://ny-techno-travels.vercel.app",
+  origin: "https://ny-techno-travel.vercel.app",
 };
+
 
 //database Connection
 mongoose.set("strictQuery", false);
@@ -32,7 +33,7 @@ const connect = async () => {
 };
 
 //middleware
-app.use(cors(corsOptions));
+app.use(cors(corsOptions)l)
 app.use(express.json());
 app.use(cookieParser());
 app.use("/api/v1/auth", authRoute);
