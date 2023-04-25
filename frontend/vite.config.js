@@ -10,6 +10,7 @@ export default defineConfig({
       '/api/v1/auth/register': {
         target: 'https://ny-techno-travel-gz7u.onrender.com',
         changeOrigin: true,
+        
         headers: {
           'Access-Control-Allow-Origin': 'https://ny-techno-travel.vercel.app/',
           'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS',
