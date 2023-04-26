@@ -15,6 +15,7 @@ const port = process.env.PORT || 8000;
 
 const corsOptions = {
   origin: "https://ny-techno-travel.vercel.app",
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true,
   allowedHeaders:['X-Requested-With, content-type, Authorization,origin,accept']
 };
