@@ -24,9 +24,9 @@ export default defineConfig({
           'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS',
           'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization,origin,accept',
           'Access-Control-Allow-Credentials': 'true'
-        },
+        }
       },
-      '/api/v1/reviews/*': {
+      '/api/v1/reviews/:tourID': {
         target: 'https://ny-techno-travel-gz7u.onrender.com/',
         changeOrigin: true,
         headers: {
@@ -34,7 +34,7 @@ export default defineConfig({
           'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS',
           'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization,origin,accept',
           'Access-Control-Allow-Credentials': 'true',
-        },
+        }
       },
       '/api/v1/users/*': {
         target: 'https://ny-techno-travel-gz7u.onrender.com/',
@@ -44,9 +44,9 @@ export default defineConfig({
           'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS',
           'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization,origin,accept',
           'Access-Control-Allow-Credentials': 'true',
-        },
-      }
+        }
       },
+      
       '/api/v1/bookings/*': {
         target: 'https://ny-techno-travel-gz7u.onrender.com/',
         changeOrigin: true,
@@ -59,4 +59,5 @@ export default defineConfig({
       }
     }
   }
+}
 );
