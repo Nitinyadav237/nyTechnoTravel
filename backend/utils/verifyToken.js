@@ -6,7 +6,7 @@ export const verifyToken = (req, res, next) => {
   if (!token) {
     return res.status(401).json({
       success: false,
-      message: "You're Not Authorize",
+      message: "You're Not Authorize verify tokrn",
     });
   }
 
@@ -30,7 +30,7 @@ export const verifyUser = (req, res, next) => {
     } else {
       res.status(401).json({
         success: false,
-        message: "You're Not Authenticated",
+        message: "You're Not Authenticated verify use",
       });
     }
   });
@@ -43,7 +43,7 @@ export const verifyAdmin = (req, res, next) => {
     } else {
       res.status(401).json({
         success: false,
-        message: "You're Not Authorize",
+        message: "You're Not Authorize verift admin",
       });
     }
   });
