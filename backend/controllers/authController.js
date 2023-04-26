@@ -40,7 +40,6 @@ export const register = async (req, res) => {
 };
 
 //user Login
-let token;
 export const login = async (req, res) => {
   const email = req.body.email;
   try {
@@ -69,16 +68,18 @@ export const login = async (req, res) => {
     console.log(user.role);
 
     //create jwt Token
-    token = jwt.sign(
+    const token = jwt.sign(
       { id: user._id, role: user.role },
       process.env.JWT_SECRET_KEY,
       { expiresIn: "15d" }
     );
     //set token in browser cookies and send response to the client
-    res
-      .cookie("accessToken", token, {
-        expires: token.expiresIn,
-      })
+    // res
+    //   .cookie("accessToken", token, {
+    //     expires: token.expiresIn,
+    //   })
+    res.setHeader("Set-Cookie", `accessToken=${token}; HttpOnly`)
+
       .status(200)
       .json({
         success: true,
@@ -95,5 +96,3 @@ export const login = async (req, res) => {
     });
   }
 };
-
-export default token;
