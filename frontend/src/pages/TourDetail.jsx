@@ -61,7 +61,6 @@ const TourDetail = () => {
         credentials: "include",
         body: JSON.stringify(reviewObj),
       });
-console.log(req.accessToken)
       const result = await res.json();
 
       if (!res.ok) {
