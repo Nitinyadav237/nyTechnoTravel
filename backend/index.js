@@ -14,7 +14,7 @@ const app = express();
 const port = process.env.PORT || 8000;
 
 const corsOptions = {
-  origin: "https://ny-techno-travel-git-main-nitinyadav2115-gmailcom.vercel.app/",
+  origin: "https://ny-techno-travel.vercel.app",
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true,
   allowedHeaders:['X-Requested-With, Content-Type, Authorization,origin,accept']
