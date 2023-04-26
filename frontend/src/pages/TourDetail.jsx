@@ -56,7 +56,7 @@ const TourDetail = () => {
         method: "post",
         headers: {
           "content-type": "application/json",
-          "Authorization": `Bearer ${req.access.accessToken}`
+          "Authorization": `Bearer ${token}`
 
         },
         credentials: "include",
