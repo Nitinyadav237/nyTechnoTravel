@@ -40,6 +40,7 @@ export const register = async (req, res) => {
 };
 
 //user Login
+let token;
 export const login = async (req, res) => {
   const email = req.body.email;
   try {
@@ -68,7 +69,7 @@ export const login = async (req, res) => {
     console.log(user.role);
 
     //create jwt Token
-   let token = jwt.sign(
+    token = jwt.sign(
       { id: user._id, role: user.role },
       process.env.JWT_SECRET_KEY,
       { expiresIn: "15d" }
