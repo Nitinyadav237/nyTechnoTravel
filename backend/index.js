@@ -6,7 +6,7 @@ import cookieParser from "cookie-parser";
 import tourRoute from "./routes/tours.js";
 import userRoute from "./routes/users.js";
 import authRoute from "./routes/auth.js";
-import reviewRoute from "./routes/reviews.js";
+import reviewRoute from "./routes/review.js";
 import bookingRoute from "./routes/bookings.js";
 
 dotenv.config();
@@ -17,7 +17,7 @@ const corsOptions = {
   origin: "https://ny-techno-travel.vercel.app",
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true,
-  allowedHeaders:['X-Requested-With, content-type, Authorization,origin,accept']
+  allowedHeaders:['X-Requested-With, Content-Type, Authorization,origin,accept']
 };
 
 
