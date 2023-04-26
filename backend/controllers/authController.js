@@ -74,12 +74,12 @@ export const login = async (req, res) => {
       { expiresIn: "15d" }
     );
     //set token in browser cookies and send response to the client
-    // res
-    //   .cookie("accessToken", token, {
-    //     expires: token.expiresIn,
-    //   })
-    res.setHeader("Set-Cookie", `accessToken=${token}; HttpOnly`)
-
+    res
+      .cookie("accessToken", token, {
+        expires: token.expiresIn,
+        secure: true,
+        httpOnly:true
+      })
       .status(200)
       .json({
         success: true,

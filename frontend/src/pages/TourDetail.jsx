@@ -56,11 +56,12 @@ const TourDetail = () => {
         method: "post",
         headers: {
           "content-type": "application/json",
+          "Authorization":(username + ":" + password)
         },
         credentials: "include",
+        mode:'cors',
         body: JSON.stringify(reviewObj),
       });
-console.log(token)
       const result = await res.json();
 
       if (!res.ok) {
