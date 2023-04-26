@@ -9,6 +9,7 @@ import Newsletter from "../shared/Newsletter";
 import useFetch from "../hooks/useFetch";
 import { BASE_URL } from "../utils/config.js";
 import { AuthContext } from "../context/AuthContext";
+import token from "../../../backend/controllers/authController";
 
 const TourDetail = () => {
   const { id } = useParams();
@@ -55,12 +56,13 @@ const TourDetail = () => {
       const res = await fetch(`${BASE_URL}/review/${id}`, {
         method: "post",
         headers: {
-          "content-type": "application/json"
-
+          "content-type": "application/json",
+          "Authorization": `Bearer ${token}`
         },
         credentials: "include",
         body: JSON.stringify(reviewObj),
       });
+console.log(token)
       const result = await res.json();
 
       if (!res.ok) {
