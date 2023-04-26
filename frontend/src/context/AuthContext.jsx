@@ -8,7 +8,6 @@ const initial_state = {
       : null,
   loading: false,
   error: null,
-  token:null
 };
 
 export const AuthContext = createContext(initial_state);
@@ -22,11 +21,9 @@ const AuthReducer = (state, action) => {
       };
     case "LOGIN_SUCCESS":
       return {
-        user: action.payload.user,
+        user: action.payload,
         loading: false,
         error: null,
-        token: action.payload.token
-
       };
     case "LOGIN_FAILURE":
       return {
@@ -67,7 +64,6 @@ export const AuthContextProvider = ({ children }) => {
         user: state.user,
         loading: state.loading,
         error: state.error,
-        token:state.token,
         dispatch,
       }}
     >
