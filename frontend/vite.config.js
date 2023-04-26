@@ -14,6 +14,7 @@ export default defineConfig({
           'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS',
           'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization,origin,accept',
           'Access-Control-Allow-Credentials': 'true',
+          
         },
       },
       '/api/v1/tours/*': {
