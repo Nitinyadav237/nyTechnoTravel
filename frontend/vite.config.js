@@ -10,7 +10,7 @@ export default defineConfig({
         target: 'https://ny-techno-travel-gz7u.onrender.com',
         changeOrigin: true,
         headers: {
-          'Access-Control-Allow-Origin': 'https://ny-techno-travel-git-main-nitinyadav2115-gmailcom.vercel.app/',
+          'Access-Control-Allow-Origin': 'https://ny-techno-travel.vercel.app/',
           'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS',
           'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization,origin,accept',
           'Access-Control-Allow-Credentials': 'true',
@@ -21,7 +21,7 @@ export default defineConfig({
         target: 'https://ny-techno-travel-gz7u.onrender.com/',
         changeOrigin: true,
         headers: {
-          'Access-Control-Allow-Origin': 'https://ny-techno-travel-git-main-nitinyadav2115-gmailcom.vercel.app/',
+          'Access-Control-Allow-Origin': 'https://ny-techno-travel.vercel.app/',
           'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS',
           'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization,origin,accept',
           'Access-Control-Allow-Credentials': 'true'
@@ -31,7 +31,7 @@ export default defineConfig({
         target: 'https://ny-techno-travel-gz7u.onrender.com/',
         changeOrigin: true,
         headers: {
-          'Access-Control-Allow-Origin': 'https://ny-techno-travel-git-main-nitinyadav2115-gmailcom.vercel.app/',
+          'Access-Control-Allow-Origin': 'https://ny-techno-travel.vercel.app/',
           'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS',
           'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization,origin,accept',
           'Access-Control-Allow-Credentials': 'true',
@@ -41,7 +41,7 @@ export default defineConfig({
         target: 'https://ny-techno-travel-gz7u.onrender.com/',
         changeOrigin: true,
         headers: {
-          'Access-Control-Allow-Origin': 'https://ny-techno-travel-git-main-nitinyadav2115-gmailcom.vercel.app/',
+          'Access-Control-Allow-Origin': 'https://ny-techno-travel.vercel.app/',
           'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS',
           'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization,origin,accept',
           'Access-Control-Allow-Credentials': 'true',
@@ -52,7 +52,7 @@ export default defineConfig({
         target: 'https://ny-techno-travel-gz7u.onrender.com/',
         changeOrigin: true,
         headers: {
-          'Access-Control-Allow-Origin': 'https://ny-techno-travel-git-main-nitinyadav2115-gmailcom.vercel.app/',
+          'Access-Control-Allow-Origin': 'https://ny-techno-travel.vercel.app/',
           'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS',
           'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization,origin,accept',
           'Access-Control-Allow-Credentials': 'true',
