@@ -55,8 +55,7 @@ const TourDetail = () => {
       const res = await fetch(`${BASE_URL}/review/${id}`, {
         method: "post",
         headers: {
-          "content-type": "application/json",
-          "Authorization": `Bearer ${token}`
+          "content-type": "application/json"
 
         },
         credentials: "include",
