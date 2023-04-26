@@ -56,7 +56,6 @@ const TourDetail = () => {
         method: "post",
         headers: {
           "content-type": "application/json",
-          "Authorization":(username + ":" + password)
         },
         credentials: "include",
         mode:'cors',
