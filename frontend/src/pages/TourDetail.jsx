@@ -51,7 +51,7 @@ const TourDetail = () => {
         rating: tourRating,
       };
 
-      const res = await fetch(`${BASE_URL}/review/${id}`, {
+      const res = await fetch(`${BASE_URL}/reviews/${id}`, {
         method: "post",
         headers: {
           "content-type": "application/json",
