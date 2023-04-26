@@ -1,4 +1,5 @@
 import jwt from "jsonwebtoken";
+
 export const verifyToken = (req, res, next) => {
   const token = req.cookies.accessToken;
 
@@ -23,8 +24,8 @@ export const verifyToken = (req, res, next) => {
 };
 
 export const verifyUser = (req, res, next) => {
-  verifyToken(req, res, next, () => {
-    if (req.user.id === req.params.id || req.user.role === "admin") {
+  verifyToken(req, res, () => {
+    if (req.user.id === req.params.id || req.user.role === "user") {
       next();
     } else {
       res.status(401).json({
@@ -36,7 +37,7 @@ export const verifyUser = (req, res, next) => {
 };
 
 export const verifyAdmin = (req, res, next) => {
-  verifyToken(req, res, next, () => {
+  verifyToken(req, res, () => {
     if (req.user.role === "admin") {
       next();
     } else {
