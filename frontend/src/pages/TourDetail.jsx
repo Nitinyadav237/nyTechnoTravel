@@ -56,6 +56,8 @@ const TourDetail = () => {
         method: "post",
         headers: {
           "content-type": "application/json",
+          "Authorization": `Bearer ${localStorage.getItem('user').token}`
+
         },
         credentials: "include",
         mode:'cors',
