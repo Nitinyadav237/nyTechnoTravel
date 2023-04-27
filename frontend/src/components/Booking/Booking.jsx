@@ -51,6 +51,7 @@ const Booking = ({ tour, avgRating }) => {
                     
                 },
                 credentials: "include",
+                mode:"cors",
                 body: JSON.stringify(booking)
             })
         
