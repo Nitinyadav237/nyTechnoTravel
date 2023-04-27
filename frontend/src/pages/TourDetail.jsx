@@ -56,7 +56,6 @@ const TourDetail = () => {
         method: "post",
         headers: {
           "content-type": "application/json",
-          "Authorization": `Bearer ${localStorage.getItem('user').token}`
 
         },
         credentials: "include",
@@ -224,8 +223,8 @@ const TourDetail = () => {
                       </div>
                     </Form>
                     <ListGroup className="user__reviews">
-                      {reviews?.map((review) => (
-                        <div key={review.productId} className="review__item">
+                      {reviews?.map((review,index) => (
+                        <div key={index} className="review__item">
                           <img src={avatar} alt="" />
                           <div className="w-100">
                             <div className="d-flex align-items-center justify-content-between">
