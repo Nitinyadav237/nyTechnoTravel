@@ -14,7 +14,7 @@ const app = express();
 const port = process.env.PORT || 8000;
 
 const corsOptions = {
-  origin: "https://ny-techno-travel.vercel.app",
+  origin: "http://localhost:5173",
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true,
   allowedHeaders:['X-Requested-With, Content-Type, Authorization,origin,accept']
@@ -37,9 +37,10 @@ const connect = async () => {
 
 //middleware
 app.use(cors(corsOptions))
+app.use(express.json());
+
 app.use(cookieParser());
 
-app.use(express.json());
 app.use("/api/v1/auth", authRoute);
 app.use("/api/v1/tours", tourRoute);
 app.use("/api/v1/users", userRoute);

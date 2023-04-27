@@ -1,7 +1,7 @@
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import User from "../models/User.js";
-
+// User registration
 export const register = async (req, res) => {
   try {
     const existingUser = await User.findOne({
@@ -39,60 +39,59 @@ export const register = async (req, res) => {
   }
 };
 
-//user Login
+// User login
 export const login = async (req, res) => {
   const email = req.body.email;
   try {
     const user = await User.findOne({ email });
-    //user doesn't exit
+    // Check if user exists
     if (!user) {
       return res.status(404).json({
         success: false,
-        message: "User Not Found",
+        message: "User not found",
       });
     }
 
-    //if user is exist then check the password or compare the password
+    // Compare user password
     const checkCorrectPassword = await bcrypt.compare(
       req.body.password,
       user.password
     );
-    //if password is incorrectb
+    // Incorrect password
     if (!checkCorrectPassword) {
       return res.status(401).json({
         success: false,
-        message: "Incorrect Email Or Password",
+        message: "Incorrect email or password",
       });
     }
-    const { password, role, ...rest } = user._doc;
-    console.log(user.role);
 
-    //create jwt Token
+    // Create JWT token
     const token = jwt.sign(
       { id: user._id, role: user.role },
       process.env.JWT_SECRET_KEY,
       { expiresIn: "15d" }
     );
-    //set token in browser cookies and send response to the client
+
+    // Set token in cookie and send response to client
     res
       .cookie("accessToken", token, {
-        expires: token.expiresIn,
+        expires: new Date(Date.now() + 15 * 24 * 60 * 60 * 1000),
         secure: true,
-        httpOnly:true
+        httpOnly: false,
       })
       .status(200)
       .json({
         success: true,
+        message: "Successfully logged in",
         token,
-        role,
-        message: "Successfully Login",
-        
-        data: { ...rest },
+        role: user.role,
+        data: { ...user._doc, password: undefined },
       });
   } catch (error) {
+    console.error(error);
     res.status(500).json({
       success: false,
-      message: "Failed To Login",
+      message: "Failed to login",
     });
   }
 };

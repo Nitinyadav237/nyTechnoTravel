@@ -2,14 +2,13 @@ import jwt from "jsonwebtoken";
 
 export const verifyToken = (req, res, next) => {
   const token = req.cookies.accessToken;
-  console.log(token)
- 
+  console.log("ver",token)
   if (!token) {
     console.log(token)
     return res.status(401).json({
       success: false,
       token,
-      message: "You're Not Authorize verify token",
+      message: "You're Not Authorize verify tokn",
     });
   }
 
