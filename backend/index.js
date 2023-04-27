@@ -14,7 +14,7 @@ const app = express();
 const port = process.env.PORT || 8000;
 
 const corsOptions = {
-  origin: "http://localhost:5173",
+  origin: "https://ny-techno-travel.vercel.app",
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true,
   allowedHeaders:['X-Requested-With, Content-Type, Authorization,origin,accept']
