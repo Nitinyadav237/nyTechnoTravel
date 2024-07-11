@@ -2,11 +2,11 @@ import React from "react";
 import "../styles/home.css";
 
 import { Container, Row, Col } from "reactstrap";
-import heroImg from "../assets/images/hero-img01.jpg";
-import heroImg2 from "../assets/images/hero-img02.jpg";
+import heroImg from "../assets/images/hero-img01.webp";
+import heroImg2 from "../assets/images/hero-img02.webp";
 import heroVideo from "../assets/images/hero-video.mp4";
-import worldImg from "../assets/images/world.png";
-import experienceImg from "../assets/images/experience.png";
+import worldImg from "../assets/images/world.webp";
+import experienceImg from "../assets/images/experience.webp";
 
 import Subtitle from "../shared/Subtitle";
 import SearchBar from "../shared/SearchBar";
@@ -50,7 +50,7 @@ const Home = () => {
             </Col>
             <Col lg="2">
               <div className="hero__img-box hero__video-box mt-4">
-                <video src={heroVideo} alt="" />
+                <video src={heroVideo} alt="" autoPlay loop muted/>
               </div>
             </Col>
             <Col lg="2">

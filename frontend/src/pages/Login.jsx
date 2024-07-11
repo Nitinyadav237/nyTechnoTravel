@@ -2,8 +2,8 @@ import React, { useState, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Container, Row, Col, Form, FormGroup, Button } from "reactstrap";
 import "../styles/login.css";
-import loginImg from "../assets/images/login.png";
-import userIcon from "../assets/images/user.png";
+import loginImg from "../assets/images/login.webp";
+import userIcon from "../assets/images/user.webp";
 import { BASE_URL } from "./../utils/config.js";
 import { AuthContext } from "../context/AuthContext";
 

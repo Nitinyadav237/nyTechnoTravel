@@ -1,1 +1,1 @@
-export const BASE_URL = "https://ny-techno-travel-gz7u.onrender.com/api/v1";
+export const BASE_URL = "https://nytechnotravel.onrender.com/api/v1";

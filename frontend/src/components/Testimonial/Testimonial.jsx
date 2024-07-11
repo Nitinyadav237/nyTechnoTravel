@@ -1,8 +1,8 @@
 import React from 'react'
 import Slider from 'react-slick'
-import ava1 from "../../assets/images/ava-1.jpg"
-import ava2 from "../../assets/images/ava-2.jpg"
-import ava3 from "../../assets/images/ava-3.jpg"
+import ava1 from "../../assets/images/ava-1.webp"
+import ava2 from "../../assets/images/ava-2.webp"
+import ava3 from "../../assets/images/ava-3.webp"
 
 const Testimonial = () => {
     const settings = {

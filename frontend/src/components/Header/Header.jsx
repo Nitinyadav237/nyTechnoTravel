@@ -3,7 +3,7 @@ import React, { useRef, useEffect ,useContext} from 'react';
 import { Container, Row, Button } from 'reactstrap';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 
-import logo from '/src/assets/images/logo.png';
+import logo from '/src/assets/images/logo.webp';
 import '../Header/Header.css';
 import { AuthContext } from '../../context/AuthContext';
 
